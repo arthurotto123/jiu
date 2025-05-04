@@ -1,0 +1,174 @@
+header{
+    color: springgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(63, 61, 61);
+    width: 100%;
+    margin: 0;
+    height: 120px;
+
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 251, 251);
+}
+
+
+
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center ;
+    gap: 30px;
+    margin: 50px;
+}
+
+.fighter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(63, 61, 61);
+    padding:30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.pts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.points{
+    font-size: 50px;
+    width: 30%;
+    height: auto;
+}
+
+#points1{
+    color: rgb(67, 67, 201);
+
+}
+
+#points2{
+    color: rgb(201, 67, 67);
+}
+
+#btns button{
+    width: 60%;
+    height: 60px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(53, 207, 53);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#bt{
+    background-color: rgb(56, 47, 47);
+    color: white;
+    width: 30%;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#timer{
+    font-size: 50px;
+    color: rgb(53, 207, 53);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    .points{
+        font-size: 30px;
+        width: 50%;
+        height: auto;
+    }
+    #btns button{
+        width: 80%;
+        height: 50px;
+        font-size: 0.8rem;
+    }
+    #bt{
+        width: 50%;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    .points{
+        font-size: 20px;
+        width: 70%;
+        height: auto;
+    }
+    #btns button{
+        width: 100px;
+        height: 40px;
+        font-size: 0.7rem;
+    }
+    #bt{
+        width: 70%;
+        height: 30  px;
+        font-size: 0.7rem;
+    }
+    
+}
