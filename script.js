@@ -43,7 +43,7 @@ let timerInterval;
             document.getElementById('points1').textContent = 0;
             document.getElementById('points2').textContent = 0;
             clearInterval(timerInterval);
-            document.getElementById('timer').textContent = "Tempo restante: 5:00";
+            document.getElementById('timer').textContent = "Tempo: 0:00";
             document.getElementById('finalMessage').textContent = ""; // Limpa a mensagem final
         }
 
@@ -62,7 +62,7 @@ let timerInterval;
             timerInterval = setInterval(() => {
                 const minutes = Math.floor(timeRemaining / 60);
                 const seconds = timeRemaining % 60;
-                timerElement.textContent = `Tempo restante: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                timerElement.textContent = `Tempo: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
         
                 if (timeRemaining <= 0) {
                     clearInterval(timerInterval);
@@ -83,6 +83,7 @@ let timerInterval;
         
             let message = "";
             let imageSrc = "";
+            
         
             if (points1 > points2) {
                 message = "Lutador Azul é o vencedor!";

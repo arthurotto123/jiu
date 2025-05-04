@@ -1,5 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 header{
-    color: springgreen;
+    color: #90C7C9;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 1.2rem;
@@ -7,7 +12,7 @@ header{
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: rgb(63, 61, 61);
+    
     width: 100%;
     margin: 0;
     height: 120px;
@@ -20,7 +25,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 251, 251);
+    background-image: url("imgs/Linhas Neônicas Geométricas Futuristas.png");
 }
 
 
@@ -40,7 +45,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: rgb(63, 61, 61);
+    background-color: rgba(63, 61, 61, 0.164);
     padding:30px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -89,14 +94,16 @@ img{
     border-radius: 12px;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: rgb(53, 207, 53);
+    background-color: rgb(150, 235, 23);
     color: white;
     font-weight: bold;
     font-size: 1rem;
+    box-shadow: 0 2px 2px  rgb(150, 235, 23);
+    cursor: pointer;
 }
 
 #bt{
-    background-color: rgb(56, 47, 47);
+    background-color: rgba(56, 47, 47, 0.26);
     color: white;
     width: 30%;
     height: 40px;
@@ -105,11 +112,18 @@ img{
     margin: 20px;
     font-weight: bold;
     font-size: 1rem;
+    box-shadow: 0 1px 8px  #90C7C9;
+    cursor: pointer;
+}
+
+#bt:hover, button:hover{
+    transform: translateY(-2px);
+
 }
 
 #timer{
     font-size: 50px;
-    color: rgb(53, 207, 53);
+    color: #90C7C9;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     text-align: center;
@@ -124,6 +138,24 @@ h2{
     font-weight: bold;
     font-size: 1.5rem;
     color: white;
+}
+
+#tempoUsuario{
+    border-radius: 10px;
+    padding: 10px;
+    width: 50px;
+    border: 0.5px solid black;
+    color: #90C7C9;
+    background-color: black;
+    margin: 20px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px  #90C7C9;
+
+}
+
+#label{
+    color: white;
+    margin: 10px;
 }
 
 
@@ -150,6 +182,15 @@ h2{
     
 }
 
+@media screen and (max-width: 600px) {
+    #btns button{
+        width: 100px;
+    }
+    
+}
+
+
+
 @media screen and (max-width: 480px) {
     img{
         width: 100px;
@@ -164,6 +205,7 @@ h2{
         width: 100px;
         height: 40px;
         font-size: 0.7rem;
+        
     }
     #bt{
         width: 70%;
