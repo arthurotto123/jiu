@@ -11,9 +11,11 @@
 
     <header>
         <h1>Contador de Pontos</h1>
+        <button class="bt1" id="tema" onclick="tema()">TEMA</button>
         </header>
+        
 
-    <button id="bt" onclick="startTimer()">Iniciar Cronômetro</button>
+    <button class="bt1" id="bt" onclick="startTimer()">Iniciar Cronômetro</button>
         <div id="timer">Tempo: 0:00</div>
         <label for="tempoUsuario" id="label">Digite o tempo (em minutos): </label>
 <input type="number" id="tempoUsuario" min="1" value="5">
@@ -23,9 +25,9 @@
            <div class="pts"> <h2>Lutador Azul</h2>
             <div class="points" id="points1">0</div> </div>
             <div id="btns"> 
-            <button onclick="addPoints(1)">Quedas  e Projeções</button>
-            <button onclick="addPoints(2)">Passagem de Guarda</button>
-            <button onclick="addPoints(3)">Montada e Pegada nas Costas</button>
+            <button class="btns2" onclick="addPoints(1)">Quedas  e Projeções</button>
+            <button class="btns2" onclick="addPoints(2)">Passagem de Guarda</button>
+            <button class="btns2" onclick="addPoints(3)">Montada e Pegada nas Costas</button>
             </div>
             <img src="imgs/ChatGPT_Image_18_de_abr._de_2025__23_23_19-removebg-preview.png" alt="">
             
@@ -34,9 +36,9 @@
             <div class="pts"><h2>Lutador Preto</h2>
             <div class="points" id="points2">0</div> </div>
            <div id="btns">
-            <button onclick="addPoints(4)">Quedas  e Projeções</button>
-            <button onclick="addPoints(5)">Passagem de Guarda</button>
-            <button onclick="addPoints(6)">Montada e Pegada nas Costas</button>
+            <button class="btns2" onclick="addPoints(4)">Quedas  e Projeções</button>
+            <button class="btns2" onclick="addPoints(5)">Passagem de Guarda</button>
+            <button class="btns2" onclick="addPoints(6)">Montada e Pegada nas Costas</button>
            </div>
             <img src="imgs/ChatGPT_Image_18_de_abr._de_2025__23_25_42-removebg-preview.png" alt="">
            
@@ -47,7 +49,7 @@
         
     </section>
 
-    <button id="bt" onclick="resetPoints()">Limpar Pontuação</button>
+    <button class="bt1" id="bt" onclick="resetPoints()">Limpar Pontuação</button>
 
     <div id="finalMessage" style="margin-top: 20px; font-size: 1.5em; text-align: center;"></div>
 

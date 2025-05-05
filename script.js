@@ -110,4 +110,61 @@ let timerInterval;
             imageElement.style.marginTop = "10px";
             finalMessage.appendChild(imageElement);
         }
-    
+
+
+       // muda o tema de fundo, alternando entre a imagem escura e a clara.
+
+        let tema1 = "imgs/Linhas Neônicas Geométricas Futuristas.png";
+
+        let tema2 = "imgs/Quadro Futurista com Formas Geométricas.png";
+
+        let claro = true;
+
+
+
+        function tema(){
+            const btbl = document.querySelectorAll('.bt1');
+            
+            const btns1 = document.querySelectorAll(".btns2");
+            
+
+            if (claro) {
+                document.body.style.backgroundImage = `url('${tema1}')`;
+                btbl.forEach(btbl =>{
+                    btbl.style.backgroundColor = "rgba(56, 47, 47, 0.26)";
+                 });
+
+
+                btns1.forEach(btns1 =>{
+                    btns1.style.backgroundColor = "rgb(150, 235, 23)";
+                    btns1.style.boxShadow = "0 2px 2px rgb(150, 235, 23)";
+                   
+                });
+                    
+                
+              } else {
+                document.body.style.backgroundImage = `url('${tema2}')`;
+                 btbl.forEach(btbl =>{
+                    btbl.style.backgroundColor = "#90C7C9";
+                 });
+
+                 btns1.forEach(btns1 =>{
+                    btns1.style.backgroundColor = 
+                    "#90C7C9";
+                    btns1.style.boxShadow = "0 2px 2px #90C7C9";
+                    
+
+                 });
+
+                 
+                
+            
+                
+               
+              }
+        
+              claro = !claro;
+
+        }
+
+

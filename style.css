@@ -12,7 +12,6 @@ header{
     text-align: center;
     justify-content: center;
     align-items: center;
-    
     width: 100%;
     margin: 0;
     height: 120px;
@@ -20,12 +19,18 @@ header{
 
 }
 
+
+
+
+
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("imgs/Linhas Neônicas Geométricas Futuristas.png");
+    background-color: white;
+    background-image: url('imgs/Linhas Neônicas Geométricas Futuristas.png');
 }
 
 
@@ -38,6 +43,14 @@ body{
     justify-content: center ;
     gap: 30px;
     margin: 50px;
+}
+header h1{
+    margin-left: 20%;
+}
+#tema{
+    width: 100px;
+    margin-left: 10%;
+    
 }
 
 .fighter{
@@ -102,10 +115,10 @@ img{
     cursor: pointer;
 }
 
-#bt{
+.bt1{
     background-color: rgba(56, 47, 47, 0.26);
-    color: white;
     width: 30%;
+    color: white;
     height: 40px;
     border-radius: 12px;
     border: none;
